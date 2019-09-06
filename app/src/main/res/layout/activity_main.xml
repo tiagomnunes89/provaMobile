@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="Sobremesas Droid"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/donnut"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/donnut_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/donut_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/donnut_product_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/donnut_item_img"
+            tools:text="Donnut" />
+
+        <TextView
+            android:id="@+id/donnut_description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/donnut_item_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donnut_product_tv"
+            tools:text="Este Donut é gostosos" />
+
+        <TextView
+            android:id="@+id/donnut_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/donnut_item_img"
+            app:layout_constraintTop_toBottomOf="@+id/donnut_description_tv"
+            tools:text="R$ 20,00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/ice_cream"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ice_cream_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icecream_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ice_cream_product_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ice_cream_item_img"
+            tools:text="Donnut" />
+
+        <TextView
+            android:id="@+id/ice_cream_description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/ice_cream_item_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream_product_tv"
+            tools:text="Este Donut é gostosos" />
+
+        <TextView
+            android:id="@+id/ice_cream_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ice_cream_item_img"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream_description_tv"
+            tools:text="R$ 20,00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/froyo"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/froyo_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_img"
+            tools:text="Donnut" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/item_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/product_tv"
+            tools:text="Este Donut é gostosos" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/item_img"
+            app:layout_constraintTop_toBottomOf="@+id/description_tv"
+            tools:text="R$ 20,00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
