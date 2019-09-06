@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/donnut_item_img"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,6 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/ice_cream_item_img"
             app:layout_constraintEnd_toEndOf="parent"
@@ -139,7 +141,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/item_img"
+            android:id="@+id/froyo_item_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -149,7 +151,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/product_tv"
+            android:id="@+id/froyo_product_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -158,31 +160,32 @@
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/item_img"
+            app:layout_constraintStart_toEndOf="@+id/froyo_item_img"
             tools:text="Donnut" />
 
         <TextView
-            android:id="@+id/description_tv"
+            android:id="@+id/froyo_description_tv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
             android:textSize="12dp"
-            app:layout_constraintStart_toEndOf="@+id/item_img"
+            app:layout_constraintStart_toEndOf="@+id/froyo_item_img"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/product_tv"
+            app:layout_constraintTop_toBottomOf="@+id/froyo_product_tv"
             tools:text="Este Donut é gostosos" />
 
         <TextView
-            android:id="@+id/price"
+            android:id="@+id/froyo_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="12dp"
             android:textSize="12dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/item_img"
-            app:layout_constraintTop_toBottomOf="@+id/description_tv"
+            app:layout_constraintStart_toEndOf="@+id/froyo_item_img"
+            app:layout_constraintTop_toBottomOf="@+id/froyo_description_tv"
             tools:text="R$ 20,00" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

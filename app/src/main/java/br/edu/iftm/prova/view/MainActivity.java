@@ -1,7 +1,6 @@
 package br.edu.iftm.prova.view;
 
 import android.os.Bundle;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
         textViewPriceDonnut = findViewById(R.id.donnut_price);
         textViewDescrptionDonnut = findViewById(R.id.donnut_description_tv);
 
-        imageViewFroyo = findViewById(R.id.item_img);
-        textViewTitleFroyo = findViewById(R.id.product_tv);
-        textViewPriceFroyo = findViewById(R.id.price);
-        textViewDescriptionFroyo = findViewById(R.id.description_tv);
+        imageViewFroyo = findViewById(R.id.froyo_item_img);
+        textViewTitleFroyo = findViewById(R.id.froyo_product_tv);
+        textViewPriceFroyo = findViewById(R.id.froyo_price);
+        textViewDescriptionFroyo = findViewById(R.id.froyo_description_tv);
 
         imageViewIce = findViewById(R.id.ice_cream_item_img);
-        textViewTitleIce= findViewById(R.id.ice_cream_product_tv);
+        textViewTitleIce = findViewById(R.id.ice_cream_product_tv);
         textViewPriceIce = findViewById(R.id.ice_cream_price);
         textViewDescrptionIce = findViewById(R.id.ice_cream_description_tv);
         searchData();
@@ -63,26 +62,21 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<Candy>> call, Response<List<Candy>> response) {
                 candyList = response.body();
                 for (Candy candy : candyList) {
-                    candyList.add(candy);
-                    if(candy.getProduto().equals("Donuts")){
+                    if (candy.getProduto().equals("Donuts")) {
                         textViewTitleDonnut.setText(candy.getProduto());
-                        textViewPriceDonnut.setText(candy.getValor());
+                        textViewPriceDonnut.setText("R$ "+candy.getValor()+ ",00");
                         textViewDescrptionDonnut.setText(candy.getDescricao());
-
                     }
-                    if(candy.getProduto().equals("Sanduiche de sorvete")){
+                    if (candy.getProduto().equals("Sanduiche de sorvete")) {
                         textViewTitleIce.setText(candy.getProduto());
-                        textViewPriceIce.setText(candy.getValor());
+                        textViewPriceIce.setText("R$ "+candy.getValor()+ ",00");
                         textViewDescrptionIce.setText(candy.getDescricao());
-
                     }
-                    if(candy.getProduto().equals("FroYo")){
+                    if (candy.getProduto().equals("FroYo")) {
                         textViewTitleFroyo.setText(candy.getProduto());
-                        textViewTitleFroyo.setText(candy.getValor());
-                        textViewTitleFroyo.setText(candy.getDescricao());
-
+                        textViewPriceFroyo.setText("R$ "+candy.getValor()+ ",00");
+                        textViewDescriptionFroyo.setText(candy.getDescricao());
                     }
-
                 }
             }
 

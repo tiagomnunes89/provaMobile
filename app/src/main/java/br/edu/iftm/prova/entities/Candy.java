@@ -7,7 +7,7 @@ public class Candy {
     private String valor;
 
 
-    // Getter Methods
+// Getter Methods
 
     public String getProduto() {
         return produto;
