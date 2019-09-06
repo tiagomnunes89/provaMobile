@@ -31,9 +31,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageViewDonnut;
     ImageView imageViewFroyo;
     ImageView imageViewIce;
-    ViewGroup viewGroupDonnut;
-    ViewGroup viewGroupIce;
-    ViewGroup viewGroupFroyo;
     List<Candy> candyList;
 
 
@@ -42,24 +39,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         candyList = new ArrayList<>();
-        viewGroupDonnut = findViewById(R.id.donnut);
-        viewGroupFroyo = findViewById(R.id.froyo);
-        viewGroupIce = findViewById(R.id.ice_cream);
 
-        imageViewDonnut = viewGroupDonnut.findViewById(R.id.donnut_item_img);
-        textViewTitleDonnut = viewGroupDonnut.findViewById(R.id.donnut_product_tv);
-        textViewPriceDonnut = viewGroupDonnut.findViewById(R.id.donnut_price);
-        textViewDescrptionDonnut = viewGroupDonnut.findViewById(R.id.donnut_description_tv);
+        imageViewDonnut = findViewById(R.id.donnut_item_img);
+        textViewTitleDonnut = findViewById(R.id.donnut_product_tv);
+        textViewPriceDonnut = findViewById(R.id.donnut_price);
+        textViewDescrptionDonnut = findViewById(R.id.donnut_description_tv);
 
-        imageViewFroyo = viewGroupFroyo.findViewById(R.id.item_img);
-        textViewTitleFroyo = viewGroupFroyo.findViewById(R.id.product_tv);
-        textViewPriceFroyo = viewGroupFroyo.findViewById(R.id.price);
-        textViewDescriptionFroyo = viewGroupFroyo.findViewById(R.id.description_tv);
+        imageViewFroyo = findViewById(R.id.item_img);
+        textViewTitleFroyo = findViewById(R.id.product_tv);
+        textViewPriceFroyo = findViewById(R.id.price);
+        textViewDescriptionFroyo = findViewById(R.id.description_tv);
 
-        imageViewIce = viewGroupIce.findViewById(R.id.ice_cream_item_img);
-        textViewTitleIce= viewGroupIce.findViewById(R.id.ice_cream_product_tv);
-        textViewPriceIce = viewGroupIce.findViewById(R.id.ice_cream_price);
-        textViewDescrptionIce = viewGroupIce.findViewById(R.id.ice_cream_description_tv);
+        imageViewIce = findViewById(R.id.ice_cream_item_img);
+        textViewTitleIce= findViewById(R.id.ice_cream_product_tv);
+        textViewPriceIce = findViewById(R.id.ice_cream_price);
+        textViewDescrptionIce = findViewById(R.id.ice_cream_description_tv);
         searchData();
     }
 
